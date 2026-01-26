@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Mirror of Feelings | BeeEvent - Emotional Intelligence Play
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Curtain Opening Effect -->
+    <div class="curtain-container" id="curtains">
+      <div class="curtain curtain-left">
+        <div class="curtain-sheen"></div>
+        <div class="curtain-folds"></div>
+        <div class="curtain-trim"></div>
+      </div>
+      <div class="curtain curtain-right">
+        <div class="curtain-sheen"></div>
+        <div class="curtain-folds"></div>
+        <div class="curtain-trim"></div>
+      </div>
+      <div class="curtain-valance">
+        <img src="images/bee.png" alt="Bee" class="valance-logo" />
+      </div>
+      <div class="curtain-title">
+        <span>The Show Is About To Begin...</span>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#home" class="logo">
+        <img src="images/bee.png" alt="BeeEvent Logo" class="bee-icon" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">The Play</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#color">COLOR Method</a></li>
+        <li><a href="#education">For Schools</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="floating-elements">
+        <span class="floating-heart" style="top: 15%; left: 10%">&#x1F49C;</span>
+        <span class="floating-star" style="top: 25%; right: 15%">&#x2B50;</span>
+        <span class="floating-heart" style="top: 60%; left: 5%">&#x1F49B;</span>
+        <span class="floating-star" style="top: 70%; right: 8%">&#x1F31F;</span>
+        <div class="floating-circle" style="top: 20%; right: 25%"></div>
+        <div class="floating-circle" style="bottom: 20%; left: 15%; width: 60px; height: 60px"></div>
+        <span class="floating-heart" style="bottom: 30%; right: 20%">&#x1F499;</span>
+        <!-- Moving emotion emojis -->
+        <span class="hero-emoji">&#x1F60A;</span>
+        <span class="hero-emoji">&#x1F622;</span>
+        <span class="hero-emoji">&#x1F60D;</span>
+        <span class="hero-emoji">&#x1F914;</span>
+        <span class="hero-emoji">&#x1F929;</span>
+        <span class="hero-emoji">&#x1F917;</span>
+      </div>
+      <!-- Character Images -->
+      <img src="images/dany_sam_looking_right.svg" alt="Danny and Sam looking right" class="hero-character hero-left-1">
+      <img src="images/sam_pointing_left_with_sam.svg" alt="Sam pointing" class="hero-character hero-right-1">
+      <div class="hero-content">
+        <h1>The <span class="highlight">Mirror</span> of Feelings</h1>
+        <p class="hero-subtitle">An Emotional Intelligence Play for Kids</p>
+        <p class="hero-description">
+          Join Danny and Sam on an enchanting theatrical journey where children
+          discover the magic of understanding their emotions. Through
+          storytelling, music, movement, and audience participation, kids learn
+          that all feelings are valid — and they always have a choice in how
+          they respond!
+        </p>
+        <a href="#contact" class="cta-button">Book Your Seats</a>
+      </div>
+    </section>
+
+    <div class="rainbow-bar"></div>
+
+    <!-- What is a Feeling Section -->
+    <section class="feelings-section" id="feelings">
+      <!-- Weather Effects -->
+      <div class="warm-overlay" id="warmOverlay"></div>
+      <div class="dark-overlay" id="darkOverlay"></div>
+      <div class="magic-overlay" id="magicOverlay"></div>
+
+      <div class="hills-container" id="hillsContainer">
+        <div class="hill hill-1">
+          <div class="house house-1">
+            <div class="house-roof"></div>
+            <div class="house-body">
+              <div class="house-window"></div>
+              <div class="house-door"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hill hill-2">
+          <div class="house house-2">
+            <div class="house-roof"></div>
+            <div class="house-body">
+              <div class="house-window"></div>
+              <div class="house-window"></div>
+            </div>
+          </div>
+          <div class="tree tree-1"></div>
+        </div>
+        <div class="hill hill-3">
+          <div class="tree tree-2"></div>
+          <div class="house house-3">
+            <div class="house-roof"></div>
+            <div class="house-body">
+              <div class="house-door"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sun-effect" id="sunEffect">
+        <div class="sun-core"></div>
+        <div class="sun-rays" id="sunRays"></div>
+        <div class="lens-flare lens-flare-1"></div>
+        <div class="lens-flare lens-flare-2"></div>
+        <div class="lens-flare lens-flare-3"></div>
+      </div>
+      <div class="sun-particles" id="sunParticles"></div>
+
+      <div class="clouds-container" id="cloudsContainer">
+        <div class="cloud cloud-1">
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-body"></div>
+        </div>
+        <div class="cloud cloud-2">
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-body"></div>
+        </div>
+        <div class="cloud cloud-3">
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-body"></div>
+        </div>
+        <div class="cloud cloud-4">
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-puff"></div>
+          <div class="cloud-body"></div>
+        </div>
+      </div>
+
+      <div class="rain-container" id="rainContainer"></div>
+      <div class="rain-splash" id="rainSplash"></div>
+      <div class="rain-mist" id="rainMist"></div>
+
+      <div class="lightning-container" id="lightningContainer">
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+        <div class="lightning-bolt">
+          <svg viewBox="0 0 100 300">
+            <polygon
+              points="50,0 20,120 45,120 15,200 50,200 10,300 90,150 55,150 85,60 55,60"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="messages-bubbles" id="messagesBubbles"></div>
+
+      <h2 class="section-title animate-on-scroll">What Is a Feeling?</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Everyone has feelings. Feelings are signals from inside us — from our
+        body, heart, and mind. They are not good or bad — they are messages from
+        inside! Feelings help us understand what we need, what matters to us,
+        and how to take care of ourselves and others. When we learn how to
+        notice and understand our feelings, we gain a powerful skill for life.
+      </p>
+      <div class="feelings-grid">
+        <div
+          class="feeling-card animate-on-scroll"
+          id="sunnyCard"
+          data-effect="sunny"
+        >
+          <span class="feeling-card-icon">&#x1F31E;</span>
+          <h3>Light & Comfortable</h3>
+          <p>
+            Some feelings feel light and comfortable, like joy, excitement, and
+            calm. They make us feel warm inside!
+          </p>
+        </div>
+        <div
+          class="feeling-card animate-on-scroll"
+          id="rainyCard"
+          data-effect="rainy"
+        >
+          <span class="feeling-card-icon">&#x1F327;</span>
+          <h3>Heavy & Confusing</h3>
+          <p>
+            Other feelings feel heavy, tight, or confusing. That's okay too!
+            These feelings are just as important.
+          </p>
+        </div>
+        <div
+          class="feeling-card animate-on-scroll"
+          id="messagesCard"
+          data-effect="messages"
+        >
+          <span class="feeling-card-icon">&#x1F4AC;</span>
+          <h3>Messages From Inside</h3>
+          <p>
+            All feelings are normal. They help us understand what we need, what
+            matters to us, and how to take care of ourselves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLOR Method Section -->
+    <section class="color-section" id="color">
+      <span class="color-floating">C</span>
+      <span class="color-floating">O</span>
+      <span class="color-floating">L</span>
+      <span class="color-floating">O</span>
+      <span class="color-floating">R</span>
+      <h2 class="section-title animate-on-scroll">The COLOR Method</h2>
+      <p class="section-subtitle animate-on-scroll">
+        A simple way to understand what you're feeling and decide what to do
+        next.
+      </p>
+      <div class="color-method">
+        <div class="color-step animate-on-scroll">
+          <div class="color-letter">C</div>
+          <div class="color-content">
+            <h3>Check Your Body</h3>
+            <p>
+              Notice what is happening inside you. Children learn to recognize
+              physical sensations such as a tight tummy, a fast heartbeat, shaky
+              legs, or warm cheeks.
+            </p>
+          </div>
+        </div>
+        <div class="color-step animate-on-scroll">
+          <div class="color-letter">O</div>
+          <div class="color-content">
+            <h3>Observe Your Face</h3>
+            <p>
+              Your expression can give you clues. Children recognize how
+              emotions show up through facial expressions like tight lips, wide
+              eyes, or drooping shoulders. A mirror doesn't judge — it only
+              shows what's there.
+            </p>
+          </div>
+        </div>
+        <div class="color-step animate-on-scroll">
+          <div class="color-letter">L</div>
+          <div class="color-content">
+            <h3>Label The Feeling</h3>
+            <p>
+              Give your feeling a name. Children learn to name emotions
+              accurately — anxiety, fear, anger, sadness, joy, and more. Naming
+              our feelings helps us understand them better.
+            </p>
+          </div>
+        </div>
+        <div class="color-step animate-on-scroll">
+          <div class="color-letter">O</div>
+          <div class="color-content">
+            <h3>Open A Choice</h3>
+            <p>
+              Think about what you can do with this feeling. Children discover
+              that emotions do not control their actions, and that they always
+              have choices in how to respond.
+            </p>
+          </div>
+        </div>
+        <div class="color-step animate-on-scroll">
+          <div class="color-letter">R</div>
+          <div class="color-content">
+            <h3>Respond In A Healthy Way</h3>
+            <p>
+              Choose an action that helps you and others. Children practice
+              healthy responses such as breathing, dancing, drawing, squeezing a
+              stress ball, hugging, or talking to a trusted adult.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p
+        class="color-outcome animate-on-scroll"
+        style="
+          text-align: center;
+          color: var(--yellow-light);
+          margin-top: 40px;
+          font-size: 1.1rem;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          z-index: 2;
+        "
+      >
+        By the end of the play, students are able to recall the steps, apply
+        them with confidence, and even guide one another through the process.
+      </p>
+    </section>
+
+    <div class="rainbow-bar"></div>
+
+    <!-- About the Play Section -->
+    <section class="about-section" id="about">
+      <h2 class="section-title animate-on-scroll">About The Play</h2>
+      <p class="section-subtitle animate-on-scroll">
+        A live, interactive theatrical experience designed to help elementary
+        school students recognize, understand, and manage their emotions in
+        healthy and age-appropriate ways. Through storytelling, music, movement,
+        and direct audience participation, children learn that all emotions are
+        valid, and that they always have a choice in how they respond.
+      </p>
+      <div class="about-content">
+        <div class="about-text animate-on-scroll">
+          <h3>The Story</h3>
+          <p>
+            The play follows two friends, <strong>Danny</strong> and
+            <strong>Sam</strong>, as they prepare a birthday surprise that
+            doesn't go exactly as planned.
+          </p>
+          <p>
+            What starts as excitement slowly turns into moments of anxiety,
+            anger, sadness, and eventually joy. As emotions become bigger and
+            harder to manage, a magical character —
+            <strong>The Mirror of Feelings</strong> — comes to life.
+          </p>
+          <p>
+            The Mirror helps the characters pause and reflect, guiding them step
+            by step to:
+          </p>
+          <ul class="about-list">
+            <li>Notice what is happening in their bodies</li>
+            <li>Observe facial expressions</li>
+            <li>Name emotions correctly</li>
+            <li>Explore healthy ways to express those emotions</li>
+          </ul>
+          <p style="margin-top: 20px">
+            The situations in the play are intentionally relatable to children's
+            daily lives: school pressure, making mistakes, forgetting important
+            things, disappointment, and celebration.
+          </p>
+          <p style="margin-top: 15px">
+            By the end, children understand that emotions are not something to
+            fear or suppress, but
+            <em>signals that can guide them when handled properly</em>.
+          </p>
+        </div>
+        <div class="about-visual animate-on-scroll">
+          <div class="about-image-container">
+            <img
+              src="images/dany_sam_surprised_seing_mirror.svg"
+              alt="Danny and Sam with the Mirror of Feelings"
+              class="about-main-image"
+            />
+          </div>
+          <div class="mirror-frame">
+            <div class="mirror-inner">
+              <span class="mirror-emoji">&#x1F970;</span>
+              <span class="mirror-text"
+                >See yourself. Understand yourself.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters-section" id="characters">
+      <h2 class="section-title animate-on-scroll">Meet The Characters</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Three unforgettable characters who model emotional awareness,
+        communication, empathy, and self-regulation.
+      </p>
+      <div class="characters-grid">
+        <div class="character-card animate-on-scroll" data-character="danny">
+          <div class="character-avatar">
+            <img src="images/dany.svg" alt="Danny" class="character-img" />
+          </div>
+          <h3>Danny</h3>
+          <p class="character-trait">Energetic • Cheerful • Caring</p>
+          <p>
+            Danny wants everything to be perfect and feels pressure when things
+            might go wrong. Through Danny, children learn how
+            <strong>anxiety</strong> feels in the body and how calming
+            strategies like breathing can help.
+          </p>
+        </div>
+        <div
+          class="character-card mirror-card animate-on-scroll"
+          data-character="mirror"
+        >
+          <div class="character-avatar">
+            <img
+              src="images/mirror_smiling.svg"
+              alt="Sam"
+              class="character-img"
+            />
+          </div>
+          <h3>The Mirror of Feelings</h3>
+          <p class="character-trait">Magical • Wise • Friendly</p>
+          <p>
+            The Mirror senses emotions and helps children understand them.
+            Rather than naming feelings for the characters, the Mirror
+            encourages <strong>self-discovery</strong>.
+          </p>
+        </div>
+        <div class="character-card animate-on-scroll" data-character="sam">
+          <div class="character-avatar">
+            <img src="images/sam.png" alt="Sam" class="character-img" />
+          </div>
+          <h3>Sam</h3>
+          <p class="character-trait">Curious • Expressive • Impulsive</p>
+          <p>
+            Sam experiences anger, sadness, and joy — learning that even heavy
+            emotions can be released in healthy ways such as movement, hugging,
+            or sharing with trusted adults.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Label Your Feeling Section -->
+    <section class="feelings-list-section" id="label-feeling">
+      <h2 class="section-title animate-on-scroll">Label Your Feeling</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Find these feelings: Happy | Sad | Angry | Scared | Calm | Excited |
+        Nervous | Proud | Lonely | Frustrated | Shy | Loved | Disappointed
+      </p>
+      <div class="feelings-tags">
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FFF9C4"
+          data-text="#333"
+          >Happy &#x1F60A;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#B3E5FC"
+          data-text="#1565C0"
+          >Sad &#x1F622;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FFCDD2"
+          data-text="#C62828"
+          >Angry &#x1F621;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#E1BEE7"
+          data-text="#6A1B9A"
+          >Scared &#x1F628;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#C8E6C9"
+          data-text="#2E7D32"
+          >Calm &#x1F60C;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FFE0B2"
+          data-text="#E65100"
+          >Excited &#x1F929;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#D7CCC8"
+          data-text="#4E342E"
+          >Nervous &#x1F630;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FFF8E1"
+          data-text="#FF8F00"
+          >Proud &#x1F60E;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#CFD8DC"
+          data-text="#37474F"
+          >Lonely &#x1F614;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FFCCBC"
+          data-text="#BF360C"
+          >Frustrated &#x1F624;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#F8BBD9"
+          data-text="#AD1457"
+          >Shy &#x1F633;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#FCE4EC"
+          data-text="#C2185B"
+          >Loved &#x1F970;</span
+        >
+        <span
+          class="feeling-tag animate-on-scroll"
+          data-color="#E0E0E0"
+          data-text="#424242"
+          >Disappointed &#x1F61E;</span
+        >
+      </div>
+      <div class="word-search-container animate-on-scroll">
+        <h3 class="word-search-title">Word Search Puzzle</h3>
+        <div class="word-search-grid">
+          <span>A</span><span>S</span><span>A</span><span>D</span><span>E</span
+          ><span>J</span><span>G</span><span>M</span><span>F</span><span>P</span
+          ><span>Q</span><span>U</span><span>V</span><span>Z</span
+          ><span>P</span> <span>F</span><span>C</span><span>A</span
+          ><span>L</span><span>M</span><span>H</span><span>A</span><span>P</span
+          ><span>P</span><span>Y</span><span>L</span><span>O</span><span>V</span
+          ><span>E</span><span>D</span> <span>R</span><span>S</span
+          ><span>P</span><span>I</span><span>O</span><span>F</span><span>R</span
+          ><span>U</span><span>S</span><span>T</span><span>R</span><span>A</span
+          ><span>T</span><span>E</span><span>D</span> <span>U</span
+          ><span>G</span><span>H</span><span>P</span><span>A</span><span>P</span
+          ><span>R</span><span>Y</span><span>L</span><span>O</span><span>U</span
+          ><span>P</span><span>N</span><span>C</span><span>I</span>
+          <span>S</span><span>P</span><span>Y</span><span>D</span><span>A</span
+          ><span>O</span><span>I</span><span>S</span><span>H</span><span>Y</span
+          ><span>B</span><span>R</span><span>T</span><span>I</span
+          ><span>S</span> <span>T</span><span>R</span><span>B</span
+          ><span>I</span><span>N</span><span>N</span><span>M</span><span>O</span
+          ><span>Q</span><span>L</span><span>V</span><span>O</span><span>R</span
+          ><span>T</span><span>A</span> <span>R</span><span>O</span
+          ><span>W</span><span>S</span><span>E</span><span>T</span><span>X</span
+          ><span>R</span><span>C</span><span>R</span><span>O</span><span>U</span
+          ><span>E</span><span>E</span><span>P</span> <span>A</span
+          ><span>U</span><span>E</span><span>I</span><span>R</span><span>S</span
+          ><span>E</span><span>A</span><span>L</span><span>A</span><span>V</span
+          ><span>D</span><span>X</span><span>D</span><span>P</span>
+          <span>T</span><span>D</span><span>X</span><span>S</span><span>V</span
+          ><span>R</span><span>V</span><span>P</span><span>N</span><span>G</span
+          ><span>W</span><span>H</span><span>C</span><span>N</span
+          ><span>O</span> <span>E</span><span>L</span><span>C</span
+          ><span>C</span><span>O</span><span>N</span><span>E</span><span>R</span
+          ><span>V</span><span>O</span><span>U</span><span>S</span><span>I</span
+          ><span>G</span><span>I</span> <span>D</span><span>O</span
+          ><span>I</span><span>A</span><span>T</span><span>N</span><span>T</span
+          ><span>E</span><span>E</span><span>M</span><span>M</span><span>P</span
+          ><span>T</span><span>E</span><span>N</span> <span>H</span
+          ><span>L</span><span>T</span><span>E</span><span>D</span><span>I</span
+          ><span>J</span><span>L</span><span>S</span><span>A</span><span>K</span
+          ><span>R</span><span>E</span><span>L</span><span>T</span>
+          <span>I</span><span>O</span><span>E</span><span>M</span><span>Q</span
+          ><span>P</span><span>A</span><span>N</span><span>G</span><span>R</span
+          ><span>Y</span><span>F</span><span>D</span><span>Y</span
+          ><span>E</span> <span>Z</span><span>N</span><span>S</span
+          ><span>V</span><span>B</span><span>C</span><span>H</span><span>G</span
+          ><span>K</span><span>D</span><span>J</span><span>M</span><span>W</span
+          ><span>X</span><span>P</span> <span>M</span><span>E</span
+          ><span>S</span><span>C</span><span>A</span><span>R</span><span>E</span
+          ><span>D</span><span>Q</span><span>T</span><span>A</span><span>B</span
+          ><span>Y</span><span>Z</span><span>G</span>
+        </div>
+        <div class="word-search-question">
+          Did you find a feeling you felt this week?
+        </div>
+      </div>
+    </section>
+
+    <!-- Healthy Choices Section -->
+    <section class="choices-section" id="choicesSection">
+      <div class="choices-particles" id="choicesParticles"></div>
+      <h2 class="section-title animate-on-scroll">
+        Healthy Ways to Feel Better
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        You get to choose what helps you best:
+      </p>
+      <div class="choices-grid">
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#FFE5E5"
+          data-text="#C62828"
+        >
+          <span class="choice-icon">&#x1F483;</span>
+          <h4>Dance It Out</h4>
+          <p>Dance and let the feeling move through your body</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#E0F7FA"
+          data-text="#00695C"
+        >
+          <span class="choice-icon">&#x1F32C;</span>
+          <h4>Breathe Slowly</h4>
+          <p>Breathe slowly until the feeling softens</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#FFF8E1"
+          data-text="#E65100"
+        >
+          <span class="choice-icon">&#x1F3A8;</span>
+          <h4>Draw Your Feeling</h4>
+          <p>Draw what the feeling looks like inside you</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#F3E5F5"
+          data-text="#6A1B9A"
+        >
+          <span class="choice-icon">&#x1F917;</span>
+          <h4>Get a Hug</h4>
+          <p>Hug someone or something that feels safe</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#E8F5E9"
+          data-text="#2E7D32"
+        >
+          <span class="choice-icon">&#x1F6B6;</span>
+          <h4>Take a Walk</h4>
+          <p>Take a walk and let your thoughts settle</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#E3F2FD"
+          data-text="#1565C0"
+        >
+          <span class="choice-icon">&#x1F4DD;</span>
+          <h4>Write About It</h4>
+          <p>Write a few words about what's inside</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#FFCCBC"
+          data-text="#BF360C"
+        >
+          <span class="choice-icon">&#x1F4AA;</span>
+          <h4>Shake & Release</h4>
+          <p>Shake your body and release the feeling</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#D1C4E9"
+          data-text="#4527A0"
+        >
+          <span class="choice-icon">&#x1F9D8;</span>
+          <h4>Pray or Sit Quietly</h4>
+          <p>Pray or sit quietly for a moment</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#B2DFDB"
+          data-text="#004D40"
+        >
+          <span class="choice-icon">&#x1F6CF;</span>
+          <h4>Rest</h4>
+          <p>Rest until your body feels lighter</p>
+        </div>
+        <div
+          class="choice-card animate-on-scroll"
+          data-color="#FFF9C4"
+          data-text="#F57F17"
+        >
+          <span class="choice-icon">&#x2728;</span>
+          <h4>My Own Way</h4>
+          <p>Find your own special way to feel better</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Value Section -->
+    <section class="education-section" id="education">
+      <h2 class="section-title animate-on-scroll">
+        Educational Value for Schools
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Teaching emotional intelligence in a way that is concrete, memorable,
+        engaging, and developmentally appropriate.
+      </p>
+      <div class="education-grid">
+        <div class="education-box animate-on-scroll">
+          <h3><span>&#x1F3EB;</span> Why It Matters</h3>
+          <p>
+            Children experience strong emotions daily, especially in school
+            environments — during exams, social interactions, mistakes,
+            surprises, and changes.
+          </p>
+          <p>
+            Without proper tools, emotions often turn into behavioral
+            challenges. The Mirror of Feelings addresses this need by teaching
+            emotional intelligence through interactive theater.
+          </p>
+          <p>
+            The play aligns with
+            <strong>Social and Emotional Learning (SEL)</strong> principles and
+            supports schools in building emotionally healthy learning
+            environments.
+          </p>
+        </div>
+        <div class="education-box animate-on-scroll">
+          <h3><span>&#x1F31F;</span> Key Benefits for Students</h3>
+          <ul class="benefits-list">
+            <li>Develops emotional awareness and vocabulary</li>
+            <li>Encourages empathy and understanding of others</li>
+            <li>Teaches self-regulation and calming strategies</li>
+            <li>Reduces impulsive emotional reactions</li>
+            <li>Strengthens communication skills</li>
+            <li>Reinforces trust in adults as emotional support</li>
+          </ul>
+        </div>
+        <div class="education-box animate-on-scroll">
+          <h3><span>&#x1F3AF;</span> For Schools</h3>
+          <ul class="benefits-list">
+            <li>Suitable for elementary students (ages 6-12)</li>
+            <li>Adaptable to different school settings and group sizes</li>
+            <li>Complements life-skills and SEL programs</li>
+            <li>Delivered by experienced BeeEvent performers</li>
+            <li>Focused on education through entertainment</li>
+          </ul>
+        </div>
+        <div class="education-box animate-on-scroll">
+          <h3><span>&#x1F4DA;</span> Curriculum Alignment</h3>
+          <ul class="benefits-list">
+            <li>Supports social-emotional learning (SEL) standards</li>
+            <li>Reinforces language arts through storytelling and vocabulary</li>
+            <li>Promotes health education by teaching healthy coping strategies</li>
+            <li>Encourages creative expression through movement and art</li>
+            <li>Builds classroom community and peer support skills</li>
+            <li>Provides take-home materials for continued learning at home</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="rainbow-bar"></div>
+
+    <!-- Practical Information Section -->
+    <section class="practical-section" id="practical">
+      <h2 class="section-title animate-on-scroll">Practical Information</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Everything you need to know about bringing the play to your school
+      </p>
+      <div class="practical-grid">
+        <div class="practical-item animate-on-scroll">
+          <span class="practical-icon">&#x23F1;</span>
+          <h4>Duration</h4>
+          <p>45 minutes</p>
+        </div>
+        <div class="practical-item animate-on-scroll">
+          <span class="practical-icon">&#x1F9D2;</span>
+          <h4>Age Group</h4>
+          <p>6–12 years (Elementary)</p>
+        </div>
+        <div class="practical-item animate-on-scroll">
+          <span class="practical-icon">&#x1F5E3;</span>
+          <h4>Language</h4>
+          <p>English</p>
+        </div>
+        <div class="practical-item animate-on-scroll">
+          <span class="practical-icon">&#x1F3DB;</span>
+          <h4>Location</h4>
+          <p>School halls or classrooms</p>
+        </div>
+        <div class="practical-item animate-on-scroll">
+          <span class="practical-icon">&#x1F3AD;</span>
+          <h4>Performers</h4>
+          <p>Experienced BeeEvent team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booklet Section -->
+    <section class="booklet-section" id="booklet">
+      <h2 class="section-title animate-on-scroll">Learning Beyond The Stage</h2>
+      <p class="section-subtitle animate-on-scroll">
+        The learning experience continues after the performance with interactive
+        take-home booklets.
+      </p>
+      <div class="booklet-content">
+        <div class="booklet-text animate-on-scroll">
+          <h3>Interactive Take-Home Booklet</h3>
+          <p>
+            Each student receives a beautifully designed booklet to reinforce
+            the lessons from the play, ensuring it becomes a long-lasting
+            emotional learning experience.
+          </p>
+          <ul class="booklet-features">
+            <li>Practice the COLOR Method through guided activities</li>
+            <li>Color body diagrams to show where feelings are felt</li>
+            <li>Draw facial expressions in mirror frames</li>
+            <li>Complete a feelings word search puzzle</li>
+            <li>Explore healthy coping strategies</li>
+            <li>Express feelings through drawing and simple writing</li>
+            <li>Apply emotional skills at school and at home</li>
+          </ul>
+          <div
+            style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap"
+          >
+            <a
+              href="Handout.pdf"
+              target="_blank"
+              class="cta-button"
+              style="padding: 12px 30px; font-size: 1rem"
+              >Preview the Handout</a
+            >
+            <a
+              href="Handout.pdf"
+              download="BeeEvent-Feelings-Handout.pdf"
+              class="cta-button"
+              style="
+                padding: 12px 30px;
+                font-size: 1rem;
+                background: linear-gradient(
+                  135deg,
+                  var(--purple-medium),
+                  var(--purple-dark)
+                );
+                color: white;
+              "
+              >Download PDF</a
+            >
+          </div>
+        </div>
+        <div class="booklet-visual animate-on-scroll">
+          <div class="booklet-flipper" id="bookletFlipper">
+            <div class="booklet-mockup booklet-front">
+              <div class="booklet-mockup-emoji">&#x1F4D6;</div>
+              <div class="booklet-mockup-title">My Feelings Booklet</div>
+              <div class="booklet-mockup-text">
+                The COLOR Method<br />Activities & Exercises
+              </div>
+            </div>
+            <div class="booklet-mockup booklet-back" id="bookletBack">
+              <div class="booklet-mockup-emoji">&#x1F3A8;</div>
+              <div class="booklet-mockup-title">Check Your Body</div>
+              <div class="booklet-mockup-text">
+                Color where you feel emotions in your body
+              </div>
+            </div>
+          </div>
+          <p class="booklet-hint">Hover to explore activities!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title animate-on-scroll">Gallery</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Meet Danny and Sam - moments of joy, learning, and emotional discovery
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-on-scroll" data-description="Danny and Sam discover the magical Mirror of Feelings together. The mirror helps them understand and express their emotions in healthy ways.">
+          <img src="images/dany_sam_surprised_seing_mirror.svg" alt="Danny and Sam with the Mirror of Feelings" />
+          <div class="gallery-caption">Danny & Sam with The Mirror</div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-description="Running and playing together brings joy and happiness! Physical activity is one of the healthy ways to express and manage our emotions.">
+          <img src="images/dany_sam_running.svg" alt="Danny and Sam playing" />
+          <div class="gallery-caption">Moments of Joy</div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-description="It's okay to feel sad sometimes. Danny and Sam learn that crying is a natural way to express sadness, and having a friend nearby makes it easier.">
+          <img src="images/dany_sam_crying.svg" alt="Danny and Sam feeling sad" />
+          <div class="gallery-caption">Understanding Sadness</div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-description="Meet Danny! A curious and caring friend who learns to understand emotions through the Mirror of Feelings. Danny shows us that everyone experiences different feelings.">
+          <img src="images/dany_standing.svg" alt="Danny character" />
+          <div class="gallery-caption">Meet Danny</div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-description="True friendship means being there for each other through all emotions. Danny and Sam show us that holding hands and supporting friends makes difficult feelings easier to handle.">
+          <img src="images/dany_sam_walking_holding_hand.svg" alt="Danny and Sam holding hands" />
+          <div class="gallery-caption">Friendship & Support</div>
+        </div>
+        <div class="gallery-item animate-on-scroll" data-description="Meet Sam! A thoughtful friend who helps Danny navigate the world of emotions. Sam demonstrates that talking about feelings with friends and trusted adults is important.">
+          <img src="images/sam_standing.svg" alt="Sam character" />
+          <div class="gallery-caption">Meet Sam</div>
+        </div>
+      </div>
+      <!-- Gallery Description Modal -->
+      <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+          <span class="gallery-modal-close">&times;</span>
+          <img src="" alt="" class="gallery-modal-image" id="galleryModalImage">
+          <h3 class="gallery-modal-title" id="galleryModalTitle"></h3>
+          <p class="gallery-modal-description" id="galleryModalDescription"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="rainbow-bar"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+      <p class="section-subtitle animate-on-scroll">
+        Ready to bring emotional intelligence to your school? Contact us to book
+        "The Mirror of Feelings" play!
+      </p>
+      <div class="contact-container">
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-icon">&#x1F4E7;</div>
+          <h3>Email Us</h3>
+          <a href="mailto:naji@beeevent.com">naji@beeevent.com</a>
+        </div>
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-icon">&#x1F4DE;</div>
+          <h3>Call Us</h3>
+          <p><a href="tel:03729896">03 729 896</a></p>
+          <p><a href="tel:71271871">71 271 871</a></p>
+        </div>
+        <div class="contact-card animate-on-scroll">
+          <div class="contact-icon">&#x1F41D;</div>
+          <h3>BeeEvent</h3>
+          <p>Educational Theater for Kids</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">
+        <img src="images/bee.png" alt="BeeEvent Logo" class="footer-bee-icon" />
+      </div>
+      <p class="footer-tagline">
+        Helping children understand their feelings through the magic of theater
+        — Join Danny, Sam & The Mirror!
+      </p>
+      <p>&copy; 2026 BeeEvent. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
