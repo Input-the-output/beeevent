@@ -1678,17 +1678,17 @@ section {
 }
 
 .booklet-features li::before {
-  content: "📝";
+  content: "✅";
   position: absolute;
   left: 0;
   font-size: 1.2rem;
 }
 
 .booklet-features li:nth-child(2)::before {
-  content: "🎨";
+  content: "💭";
 }
 .booklet-features li:nth-child(3)::before {
-  content: "✏️";
+  content: "🎨";
 }
 .booklet-features li:nth-child(4)::before {
   content: "🤝";
@@ -2526,10 +2526,10 @@ footer p {
 
 .valance-logo {
   position: absolute;
-  top: 35px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
+  width: 90px;
   height: auto;
   z-index: 20;
   animation: logoShake 0.5s ease-in-out infinite;
@@ -3537,6 +3537,86 @@ footer p {
   border-radius: 3px;
 }
 
+/* Hero Presented By */
+.hero-presented {
+  font-size: 1.1rem;
+  color: var(--yellow-light);
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* For Schools Section */
+.schools-section {
+  background: linear-gradient(180deg, #f5f5f5 0%, white 100%);
+}
+
+.schools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.school-item {
+  flex: 0 1 280px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--purple-medium);
+}
+
+.school-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(123, 45, 142, 0.15);
+}
+
+.school-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.school-item p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* Feedback from Schools Section */
+.feedback-section {
+  background: linear-gradient(180deg, white 0%, #f5f5f5 100%);
+}
+
+.feedback-placeholder {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-placeholder span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.feedback-placeholder p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .hero h1 {
@@ -3568,6 +3648,14 @@ footer p {
 
   .booklet-visual {
     order: -1;
+  }
+
+  .schools-grid {
+    gap: 20px;
+  }
+
+  .school-item {
+    flex: 0 1 100%;
   }
 }
 
@@ -3605,27 +3693,15 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .hero-presented {
+    font-size: 0.95rem;
+  }
+
   section {
     padding: 60px 5%;
   }
 
-  .word-search-container {
-    padding: 15px;
-    margin: 30px 10px 0;
-  }
-
-  .word-search-grid {
-    font-size: 0.6rem;
-    gap: 1px;
-    padding: 5px;
-  }
-
-  .word-search-grid span {
-    padding: 4px 1px;
-  }
-
-  .word-search-question {
-    font-size: 0.95rem;
-    padding: 12px;
+  .feedback-placeholder {
+    padding: 40px 25px;
   }
 }
