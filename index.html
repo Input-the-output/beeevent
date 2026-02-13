@@ -3,619 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      The Mirror of Feelings | BeeEvent - Emotional Intelligence Play
-    </title>
+    <title>Welcome | BeeEvent</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a0a20 0%, #2d1540 50%, #1a0a20 100%);
+        overflow: hidden;
+      }
+
+      .welcome {
+        text-align: center;
+        padding: 40px;
+        max-width: 520px;
+        width: 90%;
+      }
+
+      .welcome-logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 32px;
+        animation: logoEntry 0.8s ease forwards;
+        opacity: 0;
+      }
+
+      .welcome h1 {
+        font-family: "Fredoka One", cursive;
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 12px;
+        animation: fadeUp 0.6s ease 0.2s forwards;
+        opacity: 0;
+      }
+
+      .welcome p {
+        font-size: 1.15rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 48px;
+        animation: fadeUp 0.6s ease 0.35s forwards;
+        opacity: 0;
+      }
+
+      .welcome-buttons {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: fadeUp 0.6s ease 0.5s forwards;
+        opacity: 0;
+      }
+
+      .welcome-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        padding: 32px 36px;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.04);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        min-width: 200px;
+      }
+
+      .welcome-btn:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .welcome-btn-icon {
+        font-size: 3.2rem;
+        line-height: 1;
+      }
+
+      .welcome-btn-label {
+        font-family: "Nunito", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      .welcome-btn-student:hover {
+        border-color: #ffd93d;
+        box-shadow: 0 8px 32px rgba(255, 217, 61, 0.15);
+      }
+
+      .welcome-btn-admin:hover {
+        border-color: #c084d8;
+        box-shadow: 0 8px 32px rgba(192, 132, 216, 0.15);
+      }
+
+      @keyframes logoEntry {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .welcome h1 {
+          font-size: 1.8rem;
+        }
+
+        .welcome-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .welcome-btn {
+          width: 100%;
+          max-width: 260px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- Curtain Opening Effect -->
-    <div class="curtain-container" id="curtains">
-      <div class="curtain curtain-left">
-        <div class="curtain-sheen"></div>
-        <div class="curtain-folds"></div>
-        <div class="curtain-trim"></div>
-      </div>
-      <div class="curtain curtain-right">
-        <div class="curtain-sheen"></div>
-        <div class="curtain-folds"></div>
-        <div class="curtain-trim"></div>
-      </div>
-      <div class="curtain-valance">
-        <img src="images/bee.png" alt="Bee" class="valance-logo" />
-      </div>
-      <div class="curtain-title">
-        <span>The Show Is About To Begin...</span>
+    <div class="welcome">
+      <img src="images/bee.png" alt="BeeEvent" class="welcome-logo" />
+      <h1>Welcome to BeeEvent!</h1>
+      <p>Who are you?</p>
+      <div class="welcome-buttons">
+        <a href="student.html" class="welcome-btn welcome-btn-student">
+          <span class="welcome-btn-icon">&#x1F9D2;</span>
+          <span class="welcome-btn-label">I'm a Student</span>
+        </a>
+        <a href="admin.html" class="welcome-btn welcome-btn-admin">
+          <span class="welcome-btn-icon">&#x1F468;&#x200D;&#x1F4BC;</span>
+          <span class="welcome-btn-label">Parent / Administrator</span>
+        </a>
       </div>
     </div>
-
-    <!-- Navigation -->
-    <nav>
-      <a href="#home" class="logo">
-        <img src="images/bee.png" alt="BeeEvent Logo" class="bee-icon" />
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">The Play</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#color">COLOR Method</a></li>
-        <li><a href="#education">For Schools</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="mobile-menu-btn" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="floating-elements">
-        <div class="floating-circle" style="top: 20%; right: 25%"></div>
-        <div class="floating-circle" style="bottom: 20%; left: 15%; width: 60px; height: 60px"></div>
-        <div class="floating-circle" style="top: 40%; left: 8%; width: 40px; height: 40px"></div>
-      </div>
-      <!-- Character Images -->
-      <img src="images/dany_sam_looking_right.svg" alt="Danny and Sam" class="hero-character hero-left-1">
-      <img src="images/sam_pointing_left_with_sam.svg" alt="Sam pointing" class="hero-character hero-right-1">
-      <div class="hero-content">
-        <h1>The <span class="highlight">Mirror</span> of Feelings</h1>
-        <p class="hero-subtitle">An Interactive Emotional Intelligence Play for Elementary Students</p>
-        <p class="hero-presented">Presented by BeeEvent – Kids Entertainment Company</p>
-        <p class="hero-description">
-          The Mirror of Feelings is a live, interactive theatrical experience
-          designed to help elementary school students recognize, understand, and
-          manage their emotions in healthy and age-appropriate ways. Through
-          storytelling, music, movement, and direct audience participation,
-          children learn that all emotions are valid, and that they always have a
-          choice in how they respond to what they feel.
-        </p>
-        <a href="#contact" class="cta-button">Book Your Show</a>
-      </div>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- About the Play Section -->
-    <section class="about-section" id="about">
-      <h2 class="section-title animate-on-scroll">About The Play</h2>
-      <div class="about-content">
-        <div class="about-text animate-on-scroll">
-          <h3>The Story</h3>
-          <p>
-            The play follows two friends, <strong>Danny</strong> and
-            <strong>Sam</strong>, as they prepare a birthday surprise that
-            doesn't go exactly as planned.
-          </p>
-          <p>
-            What starts as excitement slowly turns into moments of anxiety,
-            anger, sadness, and eventually joy. As emotions become bigger and
-            harder to manage, a magical character —
-            <strong>The Mirror of Feelings</strong> — comes to life.
-          </p>
-          <p>
-            The Mirror helps the characters pause and reflect on what they are
-            feeling, guiding them step by step to:
-          </p>
-          <ul class="about-list">
-            <li>Notice what is happening in their bodies</li>
-            <li>Observe facial expressions</li>
-            <li>Name emotions correctly</li>
-            <li>Explore healthy ways to express those emotions</li>
-          </ul>
-          <p style="margin-top: 20px">
-            The situations in the play are intentionally relatable to children's
-            daily lives: school pressure, making mistakes, forgetting important
-            things, disappointment, and celebration.
-          </p>
-          <p style="margin-top: 15px">
-            By the end of the play, children understand that emotions are not
-            something to fear or suppress, but
-            <em>signals that can guide them when handled properly</em>.
-          </p>
-        </div>
-        <div class="about-visual animate-on-scroll">
-          <div class="about-image-container">
-            <img
-              src="images/dany_sam_surprised_seing_mirror.svg"
-              alt="Danny and Sam with the Mirror of Feelings"
-              class="about-main-image"
-            />
-          </div>
-          <div class="mirror-frame">
-            <div class="mirror-inner">
-              <span class="mirror-emoji">&#x1F970;</span>
-              <span class="mirror-text"
-                >See yourself. Understand yourself.</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Characters Section -->
-    <section class="characters-section" id="characters">
-      <h2 class="section-title animate-on-scroll">Meet The Characters</h2>
-      <div class="characters-grid">
-        <div class="character-card animate-on-scroll" data-character="danny">
-          <div class="character-avatar">
-            <img src="images/dany.svg" alt="Danny" class="character-img" />
-          </div>
-          <h3>Danny</h3>
-          <p class="character-trait">Energetic • Cheerful • Caring</p>
-          <p>
-            Danny is energetic, cheerful, and deeply caring. He wants everything
-            to be perfect and feels pressure when things might go wrong. Through
-            Danny, children learn how <strong>anxiety</strong> feels in the body
-            and how calming strategies like breathing can help.
-          </p>
-        </div>
-        <div
-          class="character-card mirror-card animate-on-scroll"
-          data-character="mirror"
-        >
-          <div class="character-avatar">
-            <img
-              src="images/mirror_smiling.svg"
-              alt="The Mirror of Feelings"
-              class="character-img"
-            />
-          </div>
-          <h3>The Mirror of Feelings</h3>
-          <p class="character-trait">Magical • Wise • Friendly</p>
-          <p>
-            The Mirror is a magical, friendly guide who senses emotions and helps
-            children understand them. Rather than naming feelings for the
-            characters, the Mirror encourages <strong>self-discovery</strong>,
-            reinforcing the idea that everyone is responsible for identifying and
-            expressing their own emotions.
-          </p>
-        </div>
-        <div class="character-card animate-on-scroll" data-character="sam">
-          <div class="character-avatar">
-            <img src="images/sam.png" alt="Sam" class="character-img" />
-          </div>
-          <h3>Sam</h3>
-          <p class="character-trait">Curious • Expressive • Impulsive</p>
-          <p>
-            Sam is curious, expressive, and sometimes impulsive. He experiences
-            anger, sadness, and joy — learning that even heavy emotions can be
-            released in healthy ways such as movement, hugging, or sharing with
-            trusted adults.
-          </p>
-        </div>
-      </div>
-      <p
-        class="animate-on-scroll"
-        style="
-          text-align: center;
-          color: #555;
-          margin-top: 40px;
-          font-size: 1.1rem;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-        "
-      >
-        Together, the characters model emotional awareness, communication,
-        empathy, and self-regulation.
-      </p>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- COLOR Method Section -->
-    <section class="color-section" id="color">
-      <span class="color-floating">C</span>
-      <span class="color-floating">O</span>
-      <span class="color-floating">L</span>
-      <span class="color-floating">O</span>
-      <span class="color-floating">R</span>
-      <h2 class="section-title animate-on-scroll">The COLOR Method</h2>
-      <p class="section-subtitle animate-on-scroll">
-        At the heart of the play is the COLOR Method, a simple emotional
-        intelligence framework that is repeated and practiced throughout the
-        performance. The method gives children a clear structure they can
-        remember and use in real life.
-      </p>
-      <div class="color-method">
-        <div class="color-step animate-on-scroll">
-          <div class="color-letter">C</div>
-          <div class="color-content">
-            <h3>Check Your Body</h3>
-            <p>
-              Children learn to notice physical sensations such as a tight tummy,
-              a fast heartbeat, shaky legs, or warm cheeks.
-            </p>
-          </div>
-        </div>
-        <div class="color-step animate-on-scroll">
-          <div class="color-letter">O</div>
-          <div class="color-content">
-            <h3>Observe Your Face</h3>
-            <p>
-              They recognize how emotions show up through facial expressions like
-              tight lips, wide eyes, or drooping shoulders.
-            </p>
-          </div>
-        </div>
-        <div class="color-step animate-on-scroll">
-          <div class="color-letter">L</div>
-          <div class="color-content">
-            <h3>Label The Feeling</h3>
-            <p>
-              Children learn to name emotions accurately, such as anxiety, fear,
-              anger, sadness, or joy.
-            </p>
-          </div>
-        </div>
-        <div class="color-step animate-on-scroll">
-          <div class="color-letter">O</div>
-          <div class="color-content">
-            <h3>Open A Choice</h3>
-            <p>
-              They discover that emotions do not control their actions, and that
-              they always have choices.
-            </p>
-          </div>
-        </div>
-        <div class="color-step animate-on-scroll">
-          <div class="color-letter">R</div>
-          <div class="color-content">
-            <h3>Respond In A Healthy Way</h3>
-            <p>
-              Children practice healthy responses such as breathing, dancing,
-              drawing, squeezing a stress ball, hugging, or talking to a trusted
-              adult.
-            </p>
-          </div>
-        </div>
-      </div>
-      <p
-        class="color-outcome animate-on-scroll"
-        style="
-          text-align: center;
-          color: var(--yellow-light);
-          margin-top: 40px;
-          font-size: 1.1rem;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-          position: relative;
-          z-index: 2;
-        "
-      >
-        By the end of the play, students are able to recall the steps, apply
-        them with confidence, and even guide one another through the process.
-      </p>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- Educational Value Section -->
-    <section class="education-section" id="education">
-      <h2 class="section-title animate-on-scroll">
-        Educational Value for Schools
-      </h2>
-      <div class="education-grid">
-        <div class="education-box animate-on-scroll">
-          <h3><span>&#x1F3EB;</span> Why It Matters</h3>
-          <p>
-            Children experience strong emotions daily, especially in school
-            environments — during exams, social interactions, mistakes,
-            surprises, and changes.
-          </p>
-          <p>
-            Without proper tools, emotions often turn into behavioral
-            challenges.
-          </p>
-          <p>
-            The Mirror of Feelings addresses this need by teaching emotional
-            intelligence in a way that is:
-          </p>
-          <ul class="benefits-list">
-            <li>Concrete</li>
-            <li>Memorable</li>
-            <li>Engaging</li>
-            <li>Developmentally appropriate</li>
-          </ul>
-          <p style="margin-top: 15px">
-            The play aligns with
-            <strong>Social and Emotional Learning (SEL)</strong> principles and
-            supports schools in building emotionally healthy learning
-            environments.
-          </p>
-        </div>
-        <div class="education-box animate-on-scroll">
-          <h3><span>&#x1F31F;</span> Key Benefits for Students</h3>
-          <ul class="benefits-list">
-            <li>Develops emotional awareness and vocabulary</li>
-            <li>Encourages empathy and understanding of others</li>
-            <li>Teaches self-regulation and calming strategies</li>
-            <li>Reduces impulsive emotional reactions</li>
-            <li>Strengthens communication skills</li>
-            <li>Reinforces trust in adults as emotional support figures</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- After-Play Impact / Booklet Section -->
-    <section class="booklet-section" id="booklet">
-      <h2 class="section-title animate-on-scroll">
-        After-Play Impact: Learning Beyond The Stage
-      </h2>
-      <p class="section-subtitle animate-on-scroll">
-        The learning experience continues after the performance. Each student
-        receives an interactive take-home booklet designed to reinforce the
-        lessons introduced during the play.
-      </p>
-      <div class="booklet-content">
-        <div class="booklet-text animate-on-scroll">
-          <h3>The Booklets Help Children</h3>
-          <ul class="booklet-features">
-            <li>Practice the COLOR Method through guided activities</li>
-            <li>Reflect on emotions they experience in daily life</li>
-            <li>Express feelings through drawing and simple writing</li>
-            <li>Identify trusted adults they can turn to</li>
-            <li>Apply emotional skills both at school and at home</li>
-          </ul>
-          <p
-            style="
-              margin-top: 25px;
-              font-size: 1.1rem;
-              color: #555;
-              font-style: italic;
-            "
-          >
-            This ensures the play is not a one-time event, but a long-lasting
-            emotional learning experience.
-          </p>
-          <div
-            style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap"
-          >
-            <a
-              href="Handout.pdf"
-              target="_blank"
-              class="cta-button"
-              style="padding: 12px 30px; font-size: 1rem"
-              >Preview the Handout</a
-            >
-            <a
-              href="Handout.pdf"
-              download="BeeEvent-Feelings-Handout.pdf"
-              class="cta-button"
-              style="
-                padding: 12px 30px;
-                font-size: 1rem;
-                background: linear-gradient(
-                  135deg,
-                  var(--purple-medium),
-                  var(--purple-dark)
-                );
-                color: white;
-              "
-              >Download PDF</a
-            >
-          </div>
-        </div>
-        <div class="booklet-visual animate-on-scroll">
-          <div class="booklet-flipper" id="bookletFlipper">
-            <div class="booklet-mockup booklet-front">
-              <div class="booklet-mockup-emoji">&#x1F4D6;</div>
-              <div class="booklet-mockup-title">My Feelings Booklet</div>
-              <div class="booklet-mockup-text">
-                The COLOR Method<br />Activities & Exercises
-              </div>
-            </div>
-            <div class="booklet-mockup booklet-back" id="bookletBack">
-              <div class="booklet-mockup-emoji">&#x1F3A8;</div>
-              <div class="booklet-mockup-title">Check Your Body</div>
-              <div class="booklet-mockup-text">
-                Color where you feel emotions in your body
-              </div>
-            </div>
-          </div>
-          <p class="booklet-hint">Hover to explore activities!</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- For Schools Section -->
-    <section class="schools-section" id="schools">
-      <h2 class="section-title animate-on-scroll">For Schools</h2>
-      <div class="schools-grid">
-        <div class="school-item animate-on-scroll">
-          <span class="school-icon">&#x1F393;</span>
-          <p>Suitable for schools that focus on students</p>
-        </div>
-        <div class="school-item animate-on-scroll">
-          <span class="school-icon">&#x1F3EB;</span>
-          <p>Adaptable to different school settings and group sizes</p>
-        </div>
-        <div class="school-item animate-on-scroll">
-          <span class="school-icon">&#x1F4DA;</span>
-          <p>Complements life-skills and SEL programs</p>
-        </div>
-        <div class="school-item animate-on-scroll">
-          <span class="school-icon">&#x1F3AD;</span>
-          <p>Delivered by experienced BeeEvent performers</p>
-        </div>
-        <div class="school-item animate-on-scroll">
-          <span class="school-icon">&#x2728;</span>
-          <p>Focused on education through entertainment</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Practical Information Section -->
-    <section class="practical-section" id="practical">
-      <h2 class="section-title animate-on-scroll">Practical Information</h2>
-      <div class="practical-grid">
-        <div class="practical-item animate-on-scroll">
-          <span class="practical-icon">&#x23F1;</span>
-          <h4>Duration</h4>
-          <p>45 minutes</p>
-        </div>
-        <div class="practical-item animate-on-scroll">
-          <span class="practical-icon">&#x1F9D2;</span>
-          <h4>Target Age Group</h4>
-          <p>Elementary students (6–12 years)</p>
-        </div>
-        <div class="practical-item animate-on-scroll">
-          <span class="practical-icon">&#x1F5E3;</span>
-          <h4>Language</h4>
-          <p>English</p>
-        </div>
-        <div class="practical-item animate-on-scroll">
-          <span class="practical-icon">&#x1F3DB;</span>
-          <h4>Location</h4>
-          <p>School halls or classroom-friendly spaces</p>
-        </div>
-        <div class="practical-item animate-on-scroll">
-          <span class="practical-icon">&#x1F41D;</span>
-          <h4>Provided By</h4>
-          <p>BeeEvent – Kids Entertainment Company</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- Gallery Section -->
-    <section class="gallery-section" id="gallery">
-      <h2 class="section-title animate-on-scroll">Gallery</h2>
-      <div class="gallery-grid">
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="Danny and Sam discover the magical Mirror of Feelings together. The mirror helps them understand and express their emotions in healthy ways."
-        >
-          <img
-            src="images/dany_sam_surprised_seing_mirror.svg"
-            alt="Danny and Sam with the Mirror of Feelings"
-          />
-          <div class="gallery-caption">Danny & Sam with The Mirror</div>
-        </div>
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="Running and playing together brings joy and happiness! Physical activity is one of the healthy ways to express and manage our emotions."
-        >
-          <img
-            src="images/dany_sam_running.svg"
-            alt="Danny and Sam playing"
-          />
-          <div class="gallery-caption">Moments of Joy</div>
-        </div>
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="It's okay to feel sad sometimes. Danny and Sam learn that crying is a natural way to express sadness, and having a friend nearby makes it easier."
-        >
-          <img
-            src="images/dany_sam_crying.svg"
-            alt="Danny and Sam feeling sad"
-          />
-          <div class="gallery-caption">Understanding Sadness</div>
-        </div>
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="Meet Danny! A curious and caring friend who learns to understand emotions through the Mirror of Feelings. Danny shows us that everyone experiences different feelings."
-        >
-          <img src="images/dany_standing.svg" alt="Danny character" />
-          <div class="gallery-caption">Meet Danny</div>
-        </div>
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="True friendship means being there for each other through all emotions. Danny and Sam show us that holding hands and supporting friends makes difficult feelings easier to handle."
-        >
-          <img
-            src="images/dany_sam_walking_holding_hand.svg"
-            alt="Danny and Sam holding hands"
-          />
-          <div class="gallery-caption">Friendship & Support</div>
-        </div>
-        <div
-          class="gallery-item animate-on-scroll"
-          data-description="Meet Sam! A thoughtful friend who helps Danny navigate the world of emotions. Sam demonstrates that talking about feelings with friends and trusted adults is important."
-        >
-          <img src="images/sam_standing.svg" alt="Sam character" />
-          <div class="gallery-caption">Meet Sam</div>
-        </div>
-      </div>
-      <!-- Gallery Modal -->
-      <div class="gallery-modal" id="galleryModal">
-        <div class="gallery-modal-content">
-          <span class="gallery-modal-close">&times;</span>
-          <img
-            src=""
-            alt=""
-            class="gallery-modal-image"
-            id="galleryModalImage"
-          />
-          <h3 class="gallery-modal-title" id="galleryModalTitle"></h3>
-          <p
-            class="gallery-modal-description"
-            id="galleryModalDescription"
-          ></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Feedback from Schools Section -->
-    <section class="feedback-section" id="feedback">
-      <h2 class="section-title animate-on-scroll">Feedback from Schools</h2>
-      <div class="feedback-placeholder animate-on-scroll">
-        <span>&#x1F4AC;</span>
-        <p>
-          We're collecting feedback from schools that have experienced the play.
-          Check back soon!
-        </p>
-      </div>
-    </section>
-
-    <div class="rainbow-bar"></div>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-      <h2 class="section-title animate-on-scroll">Booking & Contact</h2>
-      <p class="section-subtitle animate-on-scroll">
-        Bring The Mirror of Feelings to your school. Contact us for
-        availability.
-      </p>
-      <div class="contact-container">
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-icon">&#x1F4DE;</div>
-          <h3>Phone / WhatsApp</h3>
-          <p><a href="tel:03729896">03 729 896</a></p>
-          <p><a href="tel:71271871">71 271 871</a></p>
-        </div>
-        <div class="contact-card animate-on-scroll">
-          <div class="contact-icon">&#x1F4E7;</div>
-          <h3>Email</h3>
-          <a href="mailto:naji@beeevent.com">naji@beeevent.com</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-logo">
-        <img src="images/bee.png" alt="BeeEvent Logo" class="footer-bee-icon" />
-      </div>
-      <p class="footer-tagline">
-        BeeEvent – Kids Entertainment Company
-      </p>
-      <p>&copy; 2026 BeeEvent. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
